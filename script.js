@@ -1,4 +1,4 @@
-function inclui_nome() {
+function bot() {
     var nome_variavel = prompt("Coloque seu nome:");
     if(nome_variavel){
         document.getElementById("marcacao_nome").innerHTML = nome_variavel;

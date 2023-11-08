@@ -84,4 +84,6 @@ se{
            document.getElementById("resultado_10").innerHTML = "acertou";
     }
     else{
+         document.getElementById("resultado_10").innerHTML =  "ERROU!";
+ }
          document.getElementById("resultado_10").innerHTML =  "ERROU!";

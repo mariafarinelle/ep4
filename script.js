@@ -1,4 +1,4 @@
-unction um_maria(){
+function um_maria(){
 
 
     alert("Isso é um alerta!")

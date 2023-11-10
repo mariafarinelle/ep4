@@ -19,18 +19,18 @@ function botão_resposta(){
          document.getElementById("resultado_1").innerHTML =  "ERROU!";
     }
 
-se{
+   {
    alert(" Não deixar questões em aberto!");
-    }
+       }
     if(respostaUsuario2.value === "correto"){
            document.getElementById("resultado_2").innerHTML = "acertou";
     }
     else{
          document.getElementById("resultado_2").innerHTML =  "ERROU!";
-    }
+       }
      if(respostaUsuario3.value === "correto"){
            document.getElementById("resultado_3").innerHTML = "acertou";
-    }
+ }
     else{
          document.getElementById("resultado_3").innerHTML =  "ERROU!";
         }

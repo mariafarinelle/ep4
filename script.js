@@ -1,13 +1,3 @@
-function um_maria(){
-
-
-    alert("Isso é um alerta!")
-}
-
-fuction dois_maria()
-
-    prompt("maria:");
-}
 function botão_resposta(){
     var respostaUsuario1 = document.querySelector(input[name="resposta1"]:checkec
     var respostaUsuario2 = document.querySelector(input[name="resposta2"]:checkec

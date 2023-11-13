@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: green;
     background-image: url(fundo.jpg);
     display: grid;
     grid-template-areas: 
@@ -25,5 +25,5 @@ footer{
 }
 
 header, aside, main, footer{
-    background-color: rgba(116, 93, 93, 0.7);
+    background-color: rgba(117, 93, 93, 0.7);
 }

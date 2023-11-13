@@ -102,10 +102,8 @@ function funcao_resposta(){
         else{
             document.getElementById("resp_errada_10").innerHTML = "Incorreta"
         }
-        document.getElementById("quantos_acertos").innerHTML = "Você acertou " + contador + " questões!";
-    }
-    else{
-        alert("não deixe questões em branco!")
-    }
+        else{
+            alert("não deixe questões em branco!")
+        }
 
 }

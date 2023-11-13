@@ -1,78 +1,61 @@
-function botão_resposta(){
-    var respostaUsuario1 = document.querySelector(input[name="resposta1"]:checkec
-    var respostaUsuario2 = document.querySelector(input[name="resposta2"]:checkec
-    var respostaUsuario3 = document.querySelector(input[name="resposta3"]:checkec
-    var respostaUsuario4 = document.querySelector(input[name="resposta4"]:checkec
-    var respostaUsuario5 = document.querySelector(input[name="resposta5"]:checkec
-    var respostaUsuario6 = document.querySelector(input[name="resposta6"]:checkec
-    var respostaUsuario7 = document.querySelector(input[name="resposta7"]:checkec
-    var respostaUsuario8 = document.querySelector(input[name="resposta8"]:checkec
-    var respostaUsuario9 = document.querySelector(input [name="resposta9"]:checkec
-    var respostaUsuario10 = document.querySelector(input [name="resposta10"]:checkec
-
-
-    if(respostaUsuari1 && respostaUsuario2 && respostaUsuario3 && respostaUsuario4 && respostaUsuario5 && respostaUsuario6 && respostaUsuario7 && respostaUsuario8 && respostaUsuario9 && respostaUsuario10){
-       if(respostaUsuario1.value === "correto"){
-           document.getElementById("resultado_1").innerHTML = "acertou";
+function inclui_nome() {
+    var nome_variavel = prompt("Coloque seu nome:");
+    if(nome_variavel){
+        document.getElementById("marcacao_nome").innerHTML = nome_variavel;
     }
     else{
-         document.getElementById("resultado_1").innerHTML =  "ERROU!";
+        alert("Nome não atribuido, preencha o nome.");
+        inclui_nome();
     }
+}
 
-   {
-   alert(" Não deixar questões em aberto!");
-       }
-    if(respostaUsuario2.value === "correto"){
-           document.getElementById("resultado_2").innerHTML = "acertou";
-    }
-    else{
-         document.getElementById("resultado_2").innerHTML =  "ERROU!";
-       }
-     if(respostaUsuario3.value === "correto"){
-           document.getElementById("resultado_3").innerHTML = "acertou";
- }
-    else{
-         document.getElementById("resultado_3").innerHTML =  "ERROU!";
+function funcao_resposta(){
+
+    var resp1 = document.querySelector('input[name="quest_1"]:checked');
+    var resp2 = document.querySelector('input[name="quest_2"]:checked');
+    var resp3 = document.querySelector('input[name="quest_3"]:checked');
+    var resp4 = document.querySelector('input[name="quest_4"]:checked');
+
+    var contador = 0;
+
+
+    if(resp1 && resp2 && resp3 && resp4){
+        if(resp1.value == "correta"){
+            document.getElementById("resp_correta_1").innerHTML = "Correta!"
+            contador = contador + 1;
         }
-     if(respostaUsuario4.value === "correto"){
-           document.getElementById("resultado_4").innerHTML = "acertou";
+        else{
+            document.getElementById("resp_errada_1").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!"
+
+        }
+        if(resp2.value == "correta"){
+            document.getElementById("resp_correta_2").innerHTML = "Correta!"
+            contador = contador + 1;
+        }
+        else{
+            document.getElementById("resp_errada_2").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!"
+
+        }
+        if(resp3.value == "correta"){
+            document.getElementById("resp_correta_3").innerHTML = "Correta!"
+            contador = contador + 1;
+        }
+        else{
+            document.getElementById("resp_errada_3").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!"
+
+        }
+        if(resp4.value == "correta"){
+            document.getElementById("resp_correta_4").innerHTML = "Correta!"
+            contador = contador + 1;
+        }
+        else{
+            document.getElementById("resp_errada_4").innerHTML = "Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!"
+
+        }
+        document.getElementById("quantos_acertos").innerHTML = "Você acertou " + contador + " questões!";
     }
     else{
-         document.getElementById("resultado_4").innerHTML =  "ERROU!";
-  }
-     if(respostaUsuario5.value === "correto"){
-           document.getElementById("resultado_5").innerHTML = "acertou";
+        alert("não deixe questões em branco!")
     }
-    else{
-         document.getElementById("resultado_5").innerHTML =  "ERROU!";
-  }
-     if(respostaUsuario6.value === "correto"){
-           document.getElementById("resultado_6").innerHTML = "acertou";
-    }
-    else{
-         document.getElementById("resultado_6").innerHTML =  "ERROU!";
-  }
-     if(respostaUsuario7.value === "correto"){
-           document.getElementById("resultado_7").innerHTML = "acertou";
-    }
-    else{
-         document.getElementById("resultado_7").innerHTML =  "ERROU!";
-  }
-     if(respostaUsuario8.value === "correto"){
-           document.getElementById("resultado_8").innerHTML = "acertou";
-    }
-    else{
-         document.getElementById("resultado_8").innerHTML =  "ERROU!";
-  }
-     if(respostaUsuario9.value === "correto"){
-           document.getElementById("resultado_9").innerHTML = "acertou";
-    }
-    else{
-         document.getElementById("resultado_9").innerHTML =  "ERROU!";
- }
-     if(respostaUsuario10.value === "correto"){
-           document.getElementById("resultado_10").innerHTML = "acertou";
-    }
-    else{
-         document.getElementById("resultado_10").innerHTML =  "ERROU!";
- }
+
+}

@@ -1,86 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Era Vargas</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>História</title>
 </head>
-<body>
-    <h1>Qestionario</h1>
+     <body onload="inclui_nome()">
+     <script src="script.js"></script>
+</head>
+      <header><div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>  
+        <div class="header-title"> Lista de Exercício </div>
+                <div class="group">
+                    <input placeholder="Busque um tema" type="search" class="input">
+                  </div>
+            </div>
+        </header>
+        <main>
+    <h1>Qestionario</h1> </p>
     <form>
-        <h2>Qual evento marcou o início do governo de Getúlio Vargas em 1930?</h2>
-        <input type="radio" name="resposta1" value="incorreta">Revolta da vacina<br>
-        <input type="radio" name="resposta1" value="correta">Revolta constitucional<br>
-        <input type="radio" name="resposta1" value="incorreta">Revolução de 1930<br>
-        <input type="radio" name="resposta1" value="incorreta">Guerra dos farrapos<br>
-        <p id="resultado_1"></p>
+            <div class="container">
+    <p id="marcacao_nome"></p>
+    <form>
+        <h3>Qual evento marcou o início do governo de Getúlio Vargas em 1930?</h3>
+        <input type="radio" name="quest_1" value="errada">Revolta da vacina<br>
+        <input type="radio" name="quest_1" value="correta">Revolta constitucional<br>
+        <input type="radio" name="quest_1" value="errada">Revolução de 1930<br>
+        <input type="radio" name="quest_1" value="errada">Guerra dos farrapos<br>
+        <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
             
-        <h2>Durante a Era Vargas, qual foi a principal base de apoio político do governo?</h2>
+        <h3>Durante a Era Vargas, qual foi a principal base de apoio político do governo?</h3>
         <input type="radio" name="resposta2" value="incorreta">Empresário<br>
         <input type="radio" name="resposta2" value="incorreta">Igreja Católica<br>
         <input type="radio" name="resposta2" value="correta">Militares<br>
         <input type="radio" name="resposta2" value="incorreta">Comunistas<br>
-        <p id="resultado_2"></p>
+        <p id="resp_correta_2" class="verde"></p><p id="resp_errada_2" class="vermelho"></p><br>
         
-        <h2>Qual foi o nome da política econômica implementada por Vargas que buscava industrializar o Brasil?</h2>
-        <input type="radio" name="resposta3" value="incorreta">Plano coligação<br>
-        <input type="radio" name="resposta3" value="incorreta">Plano real<br>
-        <input type="radio" name="resposta3" value="incorreta">Plano cruzado<br>
+        <h3>Qual foi o nome da política econômica implementada por Vargas que buscava industrializar o Brasil?</h3>
+        <input type="radio" name="resposta3" value="errada">Plano coligação<br>
+        <input type="radio" name="resposta3" value="errada">Plano real<br>
+        <input type="radio" name="resposta3" value="errada">Plano cruzado<br>
         <input type="radio" name="resposta3" value="correta">Plano de metas<br>
-        <p id="resultado_3"></p>
+        <p id="resp_correta_3" class="verde"></p><p id="resp_errada_3" class="vermelho"></p><br>
 
-        <h2> Qual foi a principal legislação trabalhista criada durante o governo de Vargas</h2>
+        <h3> Qual foi a principal legislação trabalhista criada durante o governo de Vargas</h3>
         <input type="radio" name="resposta4" value="correta">CLT (Consolidação das Leis do Trabalho) <br>
         <input type="radio" name="resposta4" value="incorreta">Código de Defesa do Consumidor<br>
         <input type="radio" name="resposta4" value="incorreta">Código Penal<br>
         <input type="radio" name="resposta4" value="incorreta">Lei de Imprensa<br>
-        <p id="resultado_4"></p>
+        <p id="resp_correta_4" class="verde"></p><p id="resp_errada_4" class="vermelho"></p><br>
 
-        <h2>O que marcou o Estado novo, que durou de 1937 a 1945?</h2>
+        <h3>O que marcou o Estado novo, que durou de 1937 a 1945?</h3>
         <input type="radio" name="resposta5" value="incorreta">Abertura política <br>
         <input type="radio" name="resposta5" value="correta">Regime autoritário<br>
         <input type="radio" name="resposta5" value="incorreta">Restauração monárquica<br>
         <input type="radio" name="resposta5" value="incorreta"> Federalismo regional<br>
-        <p id="resultado_5></p>
-
-        <h2>Em que ano o Brasil entrou na Segunda Guerra Mundial ao lado dos Aliados?</h2>
+        <p id="resp_correta_5" class="verde"></p><p id="resp_errada_5" class="vermelho"></p><br>
+        
+        <h3>Em que ano o Brasil entrou na Segunda Guerra Mundial ao lado dos Aliados?</h3>
         <input type="radio" name="resposta6" value="correta">1944<br>
         <input type="radio" name="resposta6" value="incorreta">1841<br>
         <input type="radio" name="resposta6" value="incorreta">1942<br>
         <input type="radio" name="resposta6" value="incorreta">1945<br>
-        <p id="resultado_6></p>  
+        <p id="resp_correta_6" class="verde"></p><p id="resp_errada_6" class="vermelho"></p><br> 
 
-        <h2>Qual foi o lema do governo de Vargas durante o Estado Novo?</h2>
+        <h3>Qual foi o lema do governo de Vargas durante o Estado Novo?</h3>
         <input type="radio" name="resposta7" value="incorreta">Ordem e Progresso <br>
         <input type="radio" name="resposta7" value="incorreta">Pão e Circo <br>
         <input type="radio  name="resposta7" value="correta">Eleições livres e honestas na data marcada <br>
         <input type="radio" name="resposta7" value="incorreta">Viva la Revolución<br>
-        <p id="resultado_7></p>
+        <p id="resp_correta_7" class="verde"></p><p id="resp_errada_7" class="vermelho"></p><br>
 
-        <h2>Em que ano Vargas voltou ao poder, sendo eleito presidente democratico?</h2>
+        <h3>Em que ano Vargas voltou ao poder, sendo eleito presidente democratico?</h3>
         <input type="radio" name="resposta8" value="incorreta">1930 <br>
         <input type="radio" name="resposta8" value="incorreta">1934<br>
         <input type="radio"name="resposta8" value="incorreta">1945<br>
         <input type="radio" name="resposta8" value="correta">1950<br>
-        <p id="resultado_8></p>
+        <p id="resp_correta_8" class="verde"></p><p id="resp_errada_8" class="vermelho"></p><br>
 
-        <h2>Qual foi o nome do plano de desenvolvimento econômico implementado por Vargas nos anos 1950?</h2>
+        <h3>Qual foi o nome do plano de desenvolvimento econômico implementado por Vargas nos anos 1950?</h3>
         <input type="radio" name="resposta9" value="incorreta">Plano Marshall <br>
         <input type="radio" name="resposta9" value="incorreta">Plano Collor <br>
         <input type="radio"name="resposta9" value="correta">Plano de metas <br>
         <input type="radio" name="resposta9" value="incorreta">Plano real<br>
-        <p id="resultado_9></p>
+        <p id="resp_correta_8" class="verde"></p><p id="resp_errada_8" class="vermelho"></p><br>
 
-        <h2>Qual foi o destino final de Getúlio Vargas após seu segundo governo e sua renúncia em 1954?</h2>
+        <h3>Qual foi o destino final de Getúlio Vargas após seu segundo governo e sua renúncia em 1954?</h3>
         <input type="radio" name="resposta10" value="correta">Exílio na Argentina<br>
         <input type="radio" name="resposta10" value="incorreta">Prisão perpétua<br>
         <input type="radio"name="resposta10" value="incorreta">Retirada da vida política<br>
         <input type="radio" name="resposta10" value="incorreta">Novo mandato presidencial"<br>
         <button type="button"onclick="botão_resposta">Verificar</button>
-        <p id="resultado_10></p>
+        <p id="resp_correta_8" class="verde"></p><p id="resp_errada_8" class="vermelho"></p><br>
 
+    <p id="quantos_acertos"></p>
+            <button type="button" onclick="funcao_resposta()">Responder</button>
     </form>
-    <script src="script.js"></script>
+    <script src="scrips.js"></script>
+</main>
 </body>
+<footer>
+</footer>
 </html>
